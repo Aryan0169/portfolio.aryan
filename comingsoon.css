@@ -61,6 +61,25 @@ body{
     font-family: 'Zero', sans-serif;
 }
 
+@media screen and (max-width: 518px) {
+    .heading {
+        font-size: 50px;
+    }
+
+    .linkedin {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 292px) {
+    .heading {
+        font-size: 35px;
+    }
+
+    .linkedin {
+        font-size: 20px;
+    }
+}
+
 a{
     color: #fff;
 }
