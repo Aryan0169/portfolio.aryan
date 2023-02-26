@@ -32,7 +32,7 @@ body{
     height: 100vh;
 }
 #particles-js {
-    opacity: 0.6;
+/*     opacity: 1; */
     position: relative;
     background: transparent;
     height: 99vh;
@@ -63,7 +63,7 @@ body{
 }
 @media screen and (max-width: 518px) {
     #particles-js{
-        opacity: 0.5;
+/*         opacity: 0.5; */
     }
 
     .heading {
