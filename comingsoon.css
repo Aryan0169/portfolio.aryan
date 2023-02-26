@@ -32,7 +32,7 @@ body{
     height: 100vh;
 }
 #particles-js {
-    opacity: 0.7;
+    opacity: 0.6;
     position: relative;
     background: transparent;
     height: 99vh;
