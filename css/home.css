@@ -66,18 +66,10 @@ header.scrolled {
     background-color: black;
 }
 
-/* .nav-colored { background-color:#000; }
-.nav-transparent { background-color:transparent;} */
-
-/* .navbar.scrolled{
-    background-color: #000;
-} */
-
 .navbar-menu{
     display: flex;
     list-style: none;
     margin-right: 20px;
-    /* font-family: 'sans-serif'; */
 }
 .navbar-menu li{
     margin: 0 15px;
