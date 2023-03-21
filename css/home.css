@@ -3,6 +3,10 @@
     src: url(/../Fonts/AbsoluteXero-YwOO.ttf) format('truetype');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #000;
     font-family: 'Poppins';
@@ -12,6 +16,34 @@ body{
     margin: 0;
     color: white;
 }
+
+
+
+.scrollbar
+{
+	float: left;
+	height: 100vh;
+	overflow-y: scroll;
+}
+
+#style-4::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #000;
+}
+
+#style-4::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #000;
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+	background-color: #ffffff;
+}
+
+
 
 .logo img {
     height: 60px;
