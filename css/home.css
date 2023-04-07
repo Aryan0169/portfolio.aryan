@@ -248,6 +248,7 @@ cl{
 #skills{
     height: fit-content;
     display: flex;
+    margin-top: 30px;
 }
 
 .ski-left{
@@ -261,6 +262,21 @@ cl{
     font-family: 'Zero', sans-serif;
     background-color: rgba(123,31,167,0.15);
     border-radius: 0 20px 20px 0px;
-    margin-top: 30px;
     width: 18.5%;
+}
+
+.ski-right{
+    width: 81.5%;
+    /* float: right; */
+}
+.ski-bar{
+    float: right;
+    width: 60%;
+    height: 1.5vh;
+    border-radius: 3px;
+    /* border-color: transparent; */
+    /* background-color: linear-gradient(90deg, #FBC391 60%, #343434); */
+    background-color: #FBC391;
+    /* background-size: 60%; */
+    margin-right: 6%;
 }
