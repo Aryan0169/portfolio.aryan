@@ -109,6 +109,12 @@ header.scrolled {
     padding-bottom: 5px;
 }
 
+
+#about{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
 #about .left{
     display: flex;
     justify-content: space-between;
@@ -117,6 +123,7 @@ header.scrolled {
     /* position: absolute; */
     float: left;
     width: 30%;
+    height: fit-content;
 
 }
 .about-heading{
@@ -236,4 +243,24 @@ header.scrolled {
 }
 cl{
     font-size: 11px;
+}
+
+#skills{
+    height: fit-content;
+    display: flex;
+}
+
+.ski-left{
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    color: #FBC391;
+    font-size: 40px;
+    font-family: 'Zero', sans-serif;
+    background-color: rgba(123,31,167,0.15);
+    border-radius: 0 20px 20px 0px;
+    margin-top: 30px;
+    width: fit-content;
 }
