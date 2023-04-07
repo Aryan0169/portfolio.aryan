@@ -136,19 +136,23 @@ header.scrolled {
 
 .about-image{
     margin-top: -20px;
-    width: 80%;
+    width: 45vh;
     /* margin-left: 10%; */
     border-radius: 20px;
 }
 
 .about-detail{
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     background-color: rgba(123,31,167,0.15);
     text-align: justify;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 5%;
     border-radius: 20px;
+    font-size: 15px;
 }
 
 .right{
@@ -195,3 +199,41 @@ header.scrolled {
     border-width: 1.5px;
 }
 
+.right-down{
+    display: flex;
+    margin-top: 4vh;
+}
+
+.interests{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 2%;
+    align-items: center;
+    background-color: rgb(103, 84, 69, 0.2);
+    border-radius: 20px;
+    letter-spacing: 2px;
+}
+.int-li, .club-li{
+    padding-top: 10%;
+}
+
+.clubs{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 2%;
+    align-items: center;
+    background-color: rgb(103, 84, 69, 0.2);
+    border-radius: 20px;
+    letter-spacing: 2px;
+}
+cl{
+    font-size: 11px;
+}
