@@ -226,6 +226,7 @@ header.scrolled {
 }
 .int-li, .club-li{
     padding-top: 10%;
+    align-self: center;
 }
 
 .clubs{
