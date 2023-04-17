@@ -290,34 +290,141 @@ cl{
     margin-left: 5%;
     align-items: center;
 }
-.ski-bar{
-    width: 100%;
-    height: 1.5vh;
-    border-radius: 3px;
-    margin-top: 23.5px;
-    /* background-color: linear-gradient(
-        to right,
-        #FBC391 0%,
-        #FBC391 60%,
-        #343434 60%,
-        #343434 100%
-      ); */
-    background-color: #FBC391;
-    margin-right: 6%;
-}
 
-.ski-bar1{
-    width: 100%;
+.progress {
+    background: #343434;
+    justify-content: flex-start;
+    margin-top: 23.5px;
+    border-radius: 10px;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    display: flex;
     height: 1.5vh;
-    border-radius: 3px;
+    width: 500px;
+  }
+
+  .progress1{
+    background: #343434;
+    justify-content: flex-start;
     margin-top: 35px;
-    /* background-color: linear-gradient(
-        to right,
-        #FBC391 0%,
-        #FBC391 60%,
-        #343434 60%,
-        #343434 100%
-      ); */
-    background-color: #FBC391;
-    margin-right: 6%;
-}
+    border-radius: 10px;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    display: flex;
+    height: 1.5vh;
+    width: 500px;
+  }
+  
+  .progress-value {
+    animation: load 2s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 10px;
+    background: #FBC391;
+    height: 1.5vh;
+    width: 0;
+  }
+
+  .progress-value1 {
+    animation: load1 2s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 10px;
+    background: #FBC391;
+    height: 1.5vh;
+    width: 0;
+  }
+
+  .progress-value2 {
+    animation: load2 2s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 10px;
+    background: #FBC391;
+    height: 1.5vh;
+    width: 0;
+  }
+
+  .progress-value3 {
+    animation: load3 2s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 10px;
+    background: #FBC391;
+    height: 1.5vh;
+    width: 0;
+  }
+
+  .progress-value4 {
+    animation: load4 2s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 10px;
+    background: #FBC391;
+    height: 1.5vh;
+    width: 0;
+  }
+
+  .progress-value5 {
+    animation: load5 2s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 10px;
+    background: #FBC391;
+    height: 1.5vh;
+    width: 0;
+  }
+
+  .progress-value6 {
+    animation: load6 2s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 10px;
+    background: #FBC391;
+    height: 1.5vh;
+    width: 0;
+  }
+
+  .progress-value7 {
+    animation: load7 2s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 10px;
+    background: #FBC391;
+    height: 1.5vh;
+    width: 0;
+  }
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 75%; }
+  }
+
+  @keyframes load1 {
+    0% { width: 0; }
+    100% { width: 40%; }
+  }
+
+  @keyframes load2 {
+    0% { width: 0; }
+    100% { width: 45%; }
+  }
+
+  @keyframes load3 {
+    0% { width: 0; }
+    100% { width: 90%; }
+  }
+
+  @keyframes load4 {
+    0% { width: 0; }
+    100% { width: 85%; }
+  }
+
+  @keyframes load5 {
+    0% { width: 0; }
+    100% { width: 60%; }
+  }
+
+  @keyframes load6 {
+    0% { width: 0; }
+    100% { width: 70%; }
+  }
+
+  @keyframes load7 {
+    0% { width: 0; }
+    100% { width: 40%; }
+  }
