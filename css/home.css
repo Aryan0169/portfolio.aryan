@@ -253,7 +253,7 @@ cl{
 
 .ski-left{
     display: flex;
-    height: 60vh;
+    height: 40vh;
     align-items: center;
     justify-content: center;
     padding: 5%;
@@ -267,16 +267,57 @@ cl{
 
 .ski-right{
     width: 81.5%;
-    /* float: right; */
+    display: flex;
+}
+
+.names{
+    width: 20%;
+    display: flex;
+    letter-spacing: 2px;
+    height: fit-content;
+    padding-left: 5%;
+}
+
+.names ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.ski-bars{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    align-items: center;
 }
 .ski-bar{
-    float: right;
-    width: 60%;
+    width: 100%;
     height: 1.5vh;
     border-radius: 3px;
-    /* border-color: transparent; */
-    /* background-color: linear-gradient(90deg, #FBC391 60%, #343434); */
+    margin-top: 23.5px;
+    /* background-color: linear-gradient(
+        to right,
+        #FBC391 0%,
+        #FBC391 60%,
+        #343434 60%,
+        #343434 100%
+      ); */
     background-color: #FBC391;
-    /* background-size: 60%; */
+    margin-right: 6%;
+}
+
+.ski-bar1{
+    width: 100%;
+    height: 1.5vh;
+    border-radius: 3px;
+    margin-top: 35px;
+    /* background-color: linear-gradient(
+        to right,
+        #FBC391 0%,
+        #FBC391 60%,
+        #343434 60%,
+        #343434 100%
+      ); */
+    background-color: #FBC391;
     margin-right: 6%;
 }
