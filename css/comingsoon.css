@@ -57,6 +57,11 @@ body{
     font-family: 'Zero', sans-serif;
 }
 
+.heading a{
+    text-decoration: none;
+    color: #FBC391;
+}
+
 .linkedin{
     color: #fff;
     font-size: 30px;
