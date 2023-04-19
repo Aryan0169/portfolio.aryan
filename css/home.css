@@ -270,6 +270,8 @@ cl{
     width: 81.5%;
     display: flex;
     margin-left: 4%;
+    align-items: center;
+    justify-content: center;
 }
 
 .names{
@@ -504,9 +506,10 @@ a{
 
 #contacts{
   display: flex;
-  margin-top: 5vh;
+  margin-top: 30px;
   background-color: rgba(32, 10, 53, 0.3);
 }
+
 .foot-left{
   font-family: 'Zero', sans-serif;
   margin-left: 4%;
