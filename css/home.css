@@ -525,6 +525,37 @@ a{
   background-image: linear-gradient(90deg,#F07217, #C82222, #259ABF, #7B1FA7, #F37011);
 }
 
+.icons{
+  display: inline-flex;
+}
+.icons img{
+  width : 5vh;
+  padding: 10px;
+}
+.foot-right{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.foot-right div{ 
+  padding: 3px;
+}
+
+.location-logo{
+  height: 20px;
+  width: 10px;
+}
+
+.foot-right img{
+  width: 20px;
+  margin-right: 30px;
+}
+
 .bottom{
   display: flex;
   flex-direction: column;
