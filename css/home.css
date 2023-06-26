@@ -547,8 +547,15 @@ a{
 }
 
 .location-logo{
-  height: 20px;
+  height: 25px;
   width: 10px;
+}
+
+.location-logo1{
+  /* height: 25px; */
+  /* width: 10px; */
+  padding-top: 7px;
+  padding-bottom: 3px;
 }
 
 .foot-right img{
