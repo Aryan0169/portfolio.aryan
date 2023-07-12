@@ -200,6 +200,8 @@ nav {
   content: "LNMIIT";
 }
 
+
+
 .edu-image-el {
   position: inherit;
   z-index: 1;
@@ -210,8 +212,8 @@ nav {
 }
 
 .edu-image-el:hover {
-  transition: all 0.5s ease-in-out;
-  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.2;
 }
 
 .edu-image-wrapper {
@@ -223,9 +225,17 @@ nav {
   border-radius: 10px;
   z-index: 0;
   display: flex;
-  padding-bottom: 10px;
-  flex-direction: column-reverse;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
+  font-family: "Zero", sans-serif;
+  font-size: 15px;
+}
+
+.edu-image-text {
+  margin-top: 5%;
+  font-size: 15px;
+  font-family: "Poppins";
 }
 
 .edu-image-wrapper:hover {
