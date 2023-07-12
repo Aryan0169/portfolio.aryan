@@ -7,14 +7,17 @@ body {
   background-color: #000;
   font-family: "Poppins";
 }
+
 * {
   padding: 0;
   margin: 0;
   color: white;
 }
+
 div#preload {
   display: none;
 }
+
 .scrollbar {
   float: left;
   height: 100vh;
@@ -62,9 +65,11 @@ nav {
   list-style: none;
   margin-right: 20px;
 }
+
 .navbar-menu li {
   margin: 0 15px;
 }
+
 .navbar-menu li a {
   font-size: 16px;
   color: white;
@@ -96,6 +101,7 @@ nav {
   margin-left: 7%;
   width: 50%;
 }
+
 .home-subheading {
   margin-left: 7%;
   width: 40%;
@@ -109,6 +115,7 @@ nav {
   height: fit-content;
   display: flex;
 }
+
 #about .left {
   display: flex;
   justify-content: space-between;
@@ -119,6 +126,7 @@ nav {
   width: 30%;
   height: fit-content;
 }
+
 .about-heading {
   /* display: flex;
   flex-direction: column;
@@ -172,6 +180,7 @@ nav {
   padding: 4%;
   border-radius: 20px;
 }
+
 .edu {
   writing-mode: vertical-rl;
   float: left;
@@ -182,10 +191,12 @@ nav {
   letter-spacing: 2px;
   /* margin-top: -2.5%; */
 }
+
 .education .image {
   display: flex;
   /* flex-direction: column; */
 }
+
 .edu-image {
   position: relative;
   width: 30%;
@@ -262,6 +273,7 @@ nav {
   border-radius: 20px;
   letter-spacing: 2px;
 }
+
 .int-li,
 .club-li {
   padding-top: 10%;
@@ -281,6 +293,7 @@ nav {
   border-radius: 20px;
   letter-spacing: 2px;
 }
+
 cl {
   font-size: 11px;
 }
@@ -434,73 +447,81 @@ cl {
 
 @keyframes load {
   0% {
-      width: 0;
+    width: 0;
   }
+
   100% {
-      width: 75%;
+    width: 75%;
   }
 }
 
 @keyframes load1 {
   0% {
-      width: 0;
+    width: 0;
   }
+
   100% {
-      width: 40%;
+    width: 40%;
   }
 }
 
 @keyframes load2 {
   0% {
-      width: 0;
+    width: 0;
   }
+
   100% {
-      width: 45%;
+    width: 45%;
   }
 }
 
 @keyframes load3 {
   0% {
-      width: 0;
+    width: 0;
   }
+
   100% {
-      width: 90%;
+    width: 90%;
   }
 }
 
 @keyframes load4 {
   0% {
-      width: 0;
+    width: 0;
   }
+
   100% {
-      width: 85%;
+    width: 85%;
   }
 }
 
 @keyframes load5 {
   0% {
-      width: 0;
+    width: 0;
   }
+
   100% {
-      width: 60%;
+    width: 60%;
   }
 }
 
 @keyframes load6 {
   0% {
-      width: 0;
+    width: 0;
   }
+
   100% {
-      width: 70%;
+    width: 70%;
   }
 }
 
 @keyframes load7 {
   0% {
-      width: 0;
+    width: 0;
   }
+
   100% {
-      width: 40%;
+    width: 40%;
   }
 }
 
@@ -564,6 +585,7 @@ cl {
 .th1 {
   margin-bottom: 3%;
 }
+
 .th2 {
   margin-top: 3%;
 }
@@ -595,23 +617,23 @@ a {
   margin-top: 7px;
   border: 0px;
   height: 1px;
-  background-image: linear-gradient(
-      90deg,
+  background-image: linear-gradient(90deg,
       #f07217,
       #c82222,
       #259abf,
       #7b1fa7,
-      #f37011
-  );
+      #f37011);
 }
 
 .icons {
   display: inline-flex;
 }
+
 .icons img {
   width: 5vh;
   padding: 10px;
 }
+
 .foot-right {
   display: flex;
   flex-direction: column;
@@ -660,3 +682,72 @@ a {
   border: 0.5px solid rgba(255, 255, 255, 0.411);
 }
 
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .scrollbar {
+    height: 100vh;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    padding: 30px;
+    background-color: transparent;
+  }
+
+  .menu-icon-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #FFF;
+    margin-bottom: 5px;
+  }
+
+  .navbar-menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .navbar-menu li{
+    padding: 3px;
+  }
+
+  #home {
+    height: 100vh;
+    width: auto;
+  }
+
+  .home-content{
+    width: auto;
+    background: rgba(255, 255, 255, 0.2);
+    background-size: cover;
+    background-position: right center;
+    font-size: 12px;
+  }
+
+  .home-heading{
+    font-size: 25px;
+  }
+
+}
