@@ -12,7 +12,9 @@ body {
   margin: 0;
   color: white;
 }
-
+div#preload {
+  display: none;
+}
 .scrollbar {
   float: left;
   height: 100vh;
