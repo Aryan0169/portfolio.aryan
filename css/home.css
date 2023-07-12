@@ -82,7 +82,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(/images/sunset-2.jpg);
+  background-image: url(/images/sunset.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
