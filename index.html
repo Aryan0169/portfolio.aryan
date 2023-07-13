@@ -291,44 +291,29 @@
     </script>
 
     <script>
-      function handleIntersection(entries) {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            startTypingAnimation();
-          }
-        });
+      const homeHeading = document.getElementById("typing-effect");
+      const cursor = document.getElementById("cursor");
+      const textToType = "Aryan Bansal";
+      let currentIndex = 0;
+
+      function typeNextCharacter() {
+        if (currentIndex < textToType.length) {
+          homeHeading.textContent += textToType.charAt(currentIndex);
+          currentIndex++;
+          setTimeout(typeNextCharacter, 100); // Adjust the typing speed (milliseconds)
+        } else {
+          cursor.style.visibility = "visible"; // Show the cursor when typing is complete
+          blinkCursor();
+        }
       }
 
-      function startTypingAnimation() {
-        const homeHeading = document.getElementById("typing-effect");
-        const cursor = document.getElementById("cursor");
-        const textToType = "Aryan Bansal";
-        let currentIndex = 0;
-        homeHeading.textContent = ""; // Clear previously typed text
-
-        function typeNextCharacter() {
-          if (currentIndex < textToType.length) {
-            homeHeading.textContent += textToType.charAt(currentIndex);
-            currentIndex++;
-            setTimeout(typeNextCharacter, 100); // Adjust the typing speed (milliseconds)
-          } else {
-            cursor.style.visibility = "visible"; // Show the cursor when typing is complete
-            blinkCursor();
-          }
-        }
-
-        function blinkCursor() {
-          cursor.style.visibility =
-            cursor.style.visibility === "visible" ? "hidden" : "visible";
-          setTimeout(blinkCursor, 500); // Adjust the blinking speed (milliseconds)
-        }
-
-        typeNextCharacter();
+      function blinkCursor() {
+        cursor.style.visibility =
+          cursor.style.visibility === "visible" ? "hidden" : "visible";
+        setTimeout(blinkCursor, 500); // Adjust the blinking speed (milliseconds)
       }
 
-      const observer = new IntersectionObserver(handleIntersection);
-      const target = document.getElementById("typing-effect");
-      observer.observe(target);
+      typeNextCharacter();
     </script>
 
     <script src="js/skillOnScroll.js"></script>
