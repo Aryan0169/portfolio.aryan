@@ -290,31 +290,6 @@
       menuIcon.addEventListener("click", toggleMobileMenu);
     </script>
 
-    <script>
-      const homeHeading = document.getElementById("typing-effect");
-      const cursor = document.getElementById("cursor");
-      const textToType = "Aryan Bansal";
-      let currentIndex = 0;
-
-      function typeNextCharacter() {
-        if (currentIndex < textToType.length) {
-          homeHeading.textContent += textToType.charAt(currentIndex);
-          currentIndex++;
-          setTimeout(typeNextCharacter, 100); // Adjust the typing speed (milliseconds)
-        } else {
-          cursor.style.visibility = "visible"; // Show the cursor when typing is complete
-          blinkCursor();
-        }
-      }
-
-      function blinkCursor() {
-        cursor.style.visibility =
-          cursor.style.visibility === "visible" ? "hidden" : "visible";
-        setTimeout(blinkCursor, 500); // Adjust the blinking speed (milliseconds)
-      }
-
-      typeNextCharacter();
-    </script>
 
     <script src="js/skillOnScroll.js"></script>
   </body>
