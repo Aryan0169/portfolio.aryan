@@ -27,7 +27,7 @@
               <span class="menu-icon-line"></span>
               <span class="menu-icon-line"></span>
             </div>
-            <ul class="navbar-menu">
+            <ul class="navbar-menu" id="navbarMenu">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#skills">Skills</a></li>
@@ -278,18 +278,22 @@
     </script>
 
     <script>
-      function toggleMobileMenu() {
-        var navbarMenu = document.querySelector(".navbar-menu");
-        navbarMenu.classList.toggle("show");
+      document.addEventListener("DOMContentLoaded", function () {
+        var navbarMenu = document.getElementById("navbarMenu");
 
-        var logo = document.querySelector(".logo");
-        logo.classList.toggle("show");
-      }
-
-      var menuIcon = document.querySelector(".menu-icon");
-      menuIcon.addEventListener("click", toggleMobileMenu);
+        // Toggle navbar menu when clicked
+        document.addEventListener("click", function (event) {
+          if (
+            navbarMenu.classList.contains("show") &&
+            !navbarMenu.contains(event.target)
+          ) {
+            navbarMenu.classList.remove("show");
+          } else if (!navbarMenu.contains(event.target)) {
+            navbarMenu.classList.add("show");
+          }
+        });
+      });
     </script>
-
 
     <script src="js/skillOnScroll.js"></script>
   </body>

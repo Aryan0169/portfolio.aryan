@@ -751,7 +751,7 @@ a {
   }
 
   .phone-menu {
-    position: absolute;
+    position: fixed;
     align-self: baseline;
     display: flex;
     flex-direction: column;
