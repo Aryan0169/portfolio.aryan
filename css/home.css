@@ -92,11 +92,14 @@ nav {
 }
 
 .home-heading {
-  color: #fbc391;
   font-size: 40px;
   font-family: "Zero", sans-serif;
   margin-left: 7%;
   width: 50%;
+}
+
+#typing-effect {
+  color: #fbc391;
 }
 
 .home-subheading {
@@ -688,9 +691,10 @@ a {
 /* Responsive styles */
 @media screen and (max-width: 768px) {
 
-  body{
+  body {
     width: 100%;
   }
+
   /* Hide scrollbar */
   .scrollbar {
     overflow: hidden;

@@ -39,7 +39,10 @@
       <div id="home">
         <div class="home-content">
           <div class="home-subheading">Hi!, I am</div>
-          <div class="home-heading">Aryan Bansal</div>
+          <div class="home-heading">
+            <span id="typing-effect"></span>
+            <span id="cursor">|</span>
+          </div>
           <div class="home-subheading class2">
             an Undergraduate at LNMIIT, Jaipur. <br />
             Graphic, UI/UX Designer, Front-End Developer and an Wireless
@@ -283,6 +286,32 @@
 
       var menuIcon = document.querySelector(".menu-icon");
       menuIcon.addEventListener("click", toggleMobileMenu);
+    </script>
+
+    <script>
+      const homeHeading = document.getElementById("typing-effect");
+      const cursor = document.getElementById("cursor");
+      const textToType = "Aryan Bansal";
+      let currentIndex = 0;
+
+      function typeNextCharacter() {
+        if (currentIndex < textToType.length) {
+          homeHeading.textContent += textToType.charAt(currentIndex);
+          currentIndex++;
+          setTimeout(typeNextCharacter, 100); // Adjust the typing speed (milliseconds)
+        } else {
+          cursor.style.visibility = "visible"; // Show the cursor when typing is complete
+          blinkCursor();
+        }
+      }
+
+      function blinkCursor() {
+        cursor.style.visibility =
+          cursor.style.visibility === "visible" ? "hidden" : "visible";
+        setTimeout(blinkCursor, 500); // Adjust the blinking speed (milliseconds)
+      }
+
+      typeNextCharacter();
     </script>
 
     <script src="js/skillOnScroll.js"></script>
