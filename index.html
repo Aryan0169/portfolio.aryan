@@ -282,10 +282,10 @@
         var navbarMenu = document.getElementById("navbarMenu");
         var navbarIcon = document.getElementById("navbarIcon");
 
-        // Open navbar menu when icon is clicked
+        // Open or close navbar menu when icon is clicked
         navbarIcon.addEventListener("click", function (event) {
           event.stopPropagation();
-          navbarMenu.classList.add("show");
+          navbarMenu.classList.toggle("show");
         });
 
         // Close navbar menu when screen is clicked
