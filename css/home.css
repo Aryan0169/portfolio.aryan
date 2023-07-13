@@ -378,7 +378,7 @@ cl {
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 10px;
   background: #fbc391;
-  height: 1.5vh;
+  height: 100%;
   width: 0;
 }
 
@@ -387,7 +387,7 @@ cl {
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 10px;
   background: #fbc391;
-  height: 1.5vh;
+  height: 100%;
   width: 0;
 }
 
@@ -396,7 +396,7 @@ cl {
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 10px;
   background: #fbc391;
-  height: 1.5vh;
+  height: 100%;
   width: 0;
 }
 
@@ -405,7 +405,7 @@ cl {
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 10px;
   background: #fbc391;
-  height: 1.5vh;
+  height: 100%;
   width: 0;
 }
 
@@ -414,7 +414,7 @@ cl {
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 10px;
   background: #fbc391;
-  height: 1.5vh;
+  height: 100%;
   width: 0;
 }
 
@@ -423,7 +423,7 @@ cl {
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 10px;
   background: #fbc391;
-  height: 1.5vh;
+  height: 100%;
   width: 0;
 }
 
@@ -432,7 +432,7 @@ cl {
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 10px;
   background: #fbc391;
-  height: 1.5vh;
+  height: 100%;
   width: 0;
 }
 
@@ -441,7 +441,7 @@ cl {
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 10px;
   background: #fbc391;
-  height: 1.5vh;
+  height: 100%;
   width: 0;
 }
 
@@ -744,6 +744,7 @@ a {
   .home-content {
     width: auto;
     background-size: cover;
+    background-image: url(/images/sunset-phone.jpg);
     background-position: center right;
     font-size: 21px;
     margin-right: 10px;
@@ -771,13 +772,15 @@ a {
   }
 
   .about-heading {
-    margin: 0;
-    border-radius: 0;
+    margin: 0px;
+    /* border-radius: 0; */
     align-self: flex-end;
+    font-size: 6vh;
     padding-top: 40%;
     padding-bottom: 40%;
     padding-left: 60%;
     padding-right: 60%;
+    margin-right: -30%;
   }
 
   .about-image {
@@ -831,10 +834,11 @@ a {
     margin-top: -12%;
   }
 
-  .edu-image-wrapper{
+  .edu-image-wrapper {
     font-size: 20px;
   }
-  .edu-image-text{
+
+  .edu-image-text {
     font-size: 20px;
   }
 
@@ -852,12 +856,15 @@ a {
     padding-bottom: 10%;
   }
 
-  .clubs{
+  .clubs {
     margin-top: 10%;
   }
 
-  .int-li, .int-li1, .club-li, .club-li1{
-    text-decoration:none;
+  .int-li,
+  .int-li1,
+  .club-li,
+  .club-li1 {
+    text-decoration: none;
     font-size: 20px;
   }
 
@@ -867,9 +874,145 @@ a {
     align-items: center;
   }
 
+  .ski-left,
+  .proright {
+    margin: auto;
+    padding: 3vh;
+    height: 15vh;
+    width: 80%;
+    border-radius: 20px;
+    font-size: 6vh;
+    /* align-self: center; */
+  }
+
+  .ski-right {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5vh;
+    width: 120%;
+    flex-direction: row;
+    align-items: flex-start;
+    /* justify-content: center; */
+  }
+
+  .names {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+  }
+
+  .ski-bars {
+    width: 40%;
+    margin: 0px;
+    margin-top: 4px;
+    padding: 0px;
+  }
+
+  .progress,
+  .progress1 {
+    width: 100%;
+    height: 16.2px
+  }
+
   #projects {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    margin-top: 5vh;
+  }
+
+  .proleft {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+  }
+
+  .pro1,
+  .pro2 {
+    width: 80%;
+    height: 20vh;
+    margin-top: 2vh;
+    font-size: 30px;
+  }
+
+  .pro3 {
+    flex-direction: row;
+    height: 20vh;
+    width: 80%;
+    margin-top: 2vh;
+    padding: 0px;
+  }
+
+  .th1,
+  .th2 {
+    margin: 0px;
+    padding: 0px;
+    height: 20vh;
+    padding: 5vh;
+    font-size: 30px;
+  }
+
+  .th1 {
+    margin-right: 2%;
+  }
+
+  .th2 {
+    margin-left: 2%;
+  }
+
+  #contacts {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2vh;
+  }
+
+  .foot-left {
+    margin-top: 5vh;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 6vh;
+    text-align: center;
+  }
+
+  .foot-left hr {
+    width: 90%;
+    margin-top: 2vh;
+    align-self: center;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+    align-self: center;
+  }
+
+  .icons img{
+    width: 5.5vh;
+  }
+
+  .foot-right{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    margin-left: 10%;
+  }
+
+  .bottom{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 15px;
   }
 }
