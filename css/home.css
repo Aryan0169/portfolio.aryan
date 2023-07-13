@@ -14,9 +14,6 @@ body {
   color: white;
 }
 
-div#preload {
-  display: none;
-}
 
 .scrollbar {
   float: left;
@@ -690,9 +687,42 @@ a {
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
+
+  body{
+    width: 100%;
+  }
+  /* Hide scrollbar */
   .scrollbar {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
     height: 100vh;
   }
+
+  /* Allow scrolling */
+  .scrollbar {
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer & Edge */
+  }
+
+  /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+  .scrollbar::-webkit-scrollbar {
+    width: 0.1rem;
+    background-color: #f1f1f1;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
 
   nav {
     flex-direction: column;
@@ -996,11 +1026,11 @@ a {
     align-self: center;
   }
 
-  .icons img{
+  .icons img {
     width: 5.5vh;
   }
 
-  .foot-right{
+  .foot-right {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -1010,7 +1040,7 @@ a {
     margin-left: 10%;
   }
 
-  .bottom{
+  .bottom {
     padding-top: 2vh;
     padding-bottom: 2vh;
     font-size: 15px;
