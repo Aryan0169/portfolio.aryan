@@ -22,7 +22,7 @@
             <img src="images/signature.png" alt="signature" />
           </div>
           <div class="phone-menu">
-            <div class="menu-icon">
+            <div class="menu-icon" id="navbarIcon">
               <span class="menu-icon-line"></span>
               <span class="menu-icon-line"></span>
               <span class="menu-icon-line"></span>
@@ -280,17 +280,17 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var navbarMenu = document.getElementById("navbarMenu");
+        var navbarIcon = document.getElementById("navbarIcon");
 
-        // Toggle navbar menu when clicked
-        document.addEventListener("click", function (event) {
-          if (
-            navbarMenu.classList.contains("show") &&
-            !navbarMenu.contains(event.target)
-          ) {
-            navbarMenu.classList.remove("show");
-          } else if (!navbarMenu.contains(event.target)) {
-            navbarMenu.classList.add("show");
-          }
+        // Open navbar menu when icon is clicked
+        navbarIcon.addEventListener("click", function (event) {
+          event.stopPropagation();
+          navbarMenu.classList.add("show");
+        });
+
+        // Close navbar menu when screen is clicked
+        document.addEventListener("click", function () {
+          navbarMenu.classList.remove("show");
         });
       });
     </script>
