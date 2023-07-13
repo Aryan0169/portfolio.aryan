@@ -727,7 +727,7 @@ a {
     background-color: #555;
   }
 
-  header{
+  header {
     position: relative;
     background: transparent;
   }
@@ -739,26 +739,23 @@ a {
     /* justify-content: center; */
   }
 
-  .scrolled{
+  .scrolled {
     background: transparent;
   }
-  .logo{
+
+  .logo {
     position: absolute;
     right: 20px;
     top: 10px;
     align-self: flex-start;
   }
 
-  .phone-menu{
+  .phone-menu {
     position: absolute;
     align-self: baseline;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-  .navbar-menu {
-    display: none;
-    flex-direction: column;
   }
 
   .menu-icon {
@@ -774,6 +771,11 @@ a {
     height: 3px;
     background-color: #FFF;
     margin-bottom: 5px;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
   }
 
   .navbar-menu.show {
