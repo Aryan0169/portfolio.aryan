@@ -14,6 +14,60 @@ body {
   color: white;
 }
 
+#loading-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: glowingEffect 1.2s ease-in-out infinite;
+}
+
+.logo-image {
+  width: 100px;
+  border-radius: 50%;
+}
+
+@keyframes glowingEffect {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+
+  25% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.4);
+  }
+
+  75% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.3);
+  }
+
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+}
+
+#content {
+  display: none;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 .scrollbar {
   float: left;
@@ -816,7 +870,8 @@ a {
     justify-content: flex-end;
   }
 
-  .home-subheading , .home-subheading2{
+  .home-subheading,
+  .home-subheading2 {
     width: 90%;
   }
 
@@ -1081,42 +1136,60 @@ a {
   }
 }
 
-@media screen and (max-width: 600px){
-  body{
+@media screen and (max-width: 600px) {
+  body {
     height: 100vh;
     width: 100%;
   }
 
-  .scrollbar{
+  .scrollbar {
     height: 100vh;
   }
 
-  .about-heading, .ski-left, .proright, .foot-left{
+  .about-heading,
+  .ski-left,
+  .proright,
+  .foot-left {
     font-size: 30px;
   }
-  .home-content, .about-detail, .names, .proleft, .pro1, .pro2, .th1, .th2, .foot-right, .edu-image-wrapper, .edu-image-text{
+
+  .home-content,
+  .about-detail,
+  .names,
+  .proleft,
+  .pro1,
+  .pro2,
+  .th1,
+  .th2,
+  .foot-right,
+  .edu-image-wrapper,
+  .edu-image-text {
     font-size: 15px;
   }
 
-  .bottom{
+  .bottom {
     font-size: 10px;
   }
 
-  .edu, .interests{
+  .edu,
+  .interests {
     font-size: 20px;
   }
 
-  .int-li, .int-li1, .club-li, .club-li1{
+  .int-li,
+  .int-li1,
+  .club-li,
+  .club-li1 {
     font-size: 12px;
   }
 
-  .image{
+  .image {
     width: 250%;
     margin: -25%;
     /* height: fit-content; */
   }
 
-  .education{
+  .education {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1125,33 +1198,36 @@ a {
     /* height: max-content; */
   }
 
-  .right-down{
+  .right-down {
     margin-top: 2.5vh;
   }
-  .edu{
+
+  .edu {
     margin-bottom: 0px;
     margin: 0px;
   }
 
-  .about-image{
+  .about-image {
     height: 40vh;
   }
-  .edu-image{
+
+  .edu-image {
     margin-bottom: 10px;
     padding: 0px;
   }
 
-  .ski-bars{
+  .ski-bars {
     width: 30%;
     padding-left: 20px;
   }
+
   .progress,
   .progress1 {
     width: 100%;
     height: 8px
   }
 
-  .ski-right{
+  .ski-right {
     flex-direction: row;
     justify-self: center;
     align-self: center;
