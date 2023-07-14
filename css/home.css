@@ -164,6 +164,26 @@ nav {
   padding-bottom: 5px;
 }
 
+.download-button {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 3px;
+}
+
+.download-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.class2 a{
+  margin-top: 10px;
+}
+
 #about {
   width: 100%;
   height: fit-content;
@@ -884,6 +904,11 @@ a {
     width: 100%;
   }
 
+  .download-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
   #about {
     flex-direction: column;
     align-items: center;
@@ -1144,6 +1169,11 @@ a {
 
   .scrollbar {
     height: 100vh;
+  }
+
+  .download-button {
+    font-size: 12px;
+    padding: 6px 12px;
   }
 
   .about-heading,
