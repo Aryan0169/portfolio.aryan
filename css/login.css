@@ -157,6 +157,9 @@ form {
     a{
         width: 50%;
     }
+    p{
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 292px) {}
