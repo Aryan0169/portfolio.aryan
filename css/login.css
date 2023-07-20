@@ -151,6 +151,12 @@ form {
         width: 40%;
         margin-top: 20%;
     }
+    .back-home-link img {
+        width: 18%;
+    }
+    a{
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 292px) {}
