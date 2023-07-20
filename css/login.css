@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "Zero";
+    src: url(/../Fonts/AbsoluteXero-YwOO.ttf) format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    font-family: "Poppins";
+    /* overflow: hidden; */
+}
+
+#particles-js {
+    /* opacity: 0.7; */
+    position: relative;
+    background: transparent;
+    height: 99vh;
+    width: 100%;
+    display: flex;
+    background: transparent;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    width: 15%;
+}
+
+.back-home-link {
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: transform 0.04s ease-in-out;
+    transform-origin: center left;
+}
+
+.back-home-link:hover {
+    transform: scale(1.1);
+}
+
+
+.back-home-link img {
+    width: 18%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.content {
+    width: 60%;
+    /* height: 99vh; */
+    display: flex;
+    background: transparent;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.login-container {
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(123, 31, 167, 0.15);
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container h1 {
+    font-family: 'Zero', sans-serif;
+    color: #FBC391;
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 40px;
+}
+
+form {
+    width: 100%;
+    border: 0px;
+    box-shadow: none;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 60%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: #fff;
+}
+
+.form-group input:focus {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid white;
+}
+
+.form-group button {
+    width: 20%;
+    padding: 10px;
+    background-color: white;
+    color: #000;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+@media screen and (max-width: 518px) {
+
+    .login-container h1 {
+        font-size: 25px;
+        margin-bottom: 20%;
+    }
+
+    .content {
+        height: 50vh;
+    }
+
+    .login-container {
+        height: 100%;
+    }
+
+    .form-group button {
+        font-size: 15px;
+        width: 40%;
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 292px) {}
