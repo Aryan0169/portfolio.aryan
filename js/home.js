@@ -280,7 +280,7 @@ Outro:
 */
 
         if (username === "aryan123" && password === "aryan123") {
-            window.location.href = "index.html";
+            window.location.href = "https://drive.google.com/drive/folders/1afWBQXMUPajLw6QxYQRbZH2QC-zZG8dl?usp=sharing";
         } else {
             errorMessage.style.display = "block";
         }
