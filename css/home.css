@@ -129,7 +129,7 @@ nav {
 }
 
 .navbar-menu li a:hover,
-.navbar-menu li a:active {
+.navbar-menu li a:active{
   border-bottom: 2px solid #fbc391;
   color: #fbc391;
 }
@@ -509,7 +509,7 @@ cl {
   }
 
   100% {
-    width: 60%;
+    width: 65%;
   }
 }
 
@@ -519,7 +519,7 @@ cl {
   }
 
   100% {
-    width: 45%;
+    width: 50%;
   }
 }
 
@@ -529,7 +529,7 @@ cl {
   }
 
   100% {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -549,7 +549,7 @@ cl {
   }
 
   100% {
-    width: 60%;
+    width: 85%;
   }
 }
 
@@ -559,7 +559,7 @@ cl {
   }
 
   100% {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -569,7 +569,7 @@ cl {
   }
 
   100% {
-    width: 50%;
+    width: 100%;
   }
 }
 
