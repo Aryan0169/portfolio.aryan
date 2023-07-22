@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Zero";
+    src: url(/../Fonts/AbsoluteXero-YwOO.ttf) format("truetype");
+}
+
+body {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    color: #fff;
+}
+
+#projects {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-row {
+    display: flex;
+    justify-content: space-between; /* Optional: Adjust as needed */
+    width: 100%; /* Optional: Adjust as needed */
+    margin-bottom: 20px; /* Optional: Adjust as needed */
+  }
+
+.proright {
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    color: #fbc391;
+    font-size: 40px;
+    font-family: "Zero", sans-serif;
+    background-color: rgba(123, 31, 167, 0.15);
+    border-radius: 20px 0px 0px 20px;
+    width: 18.5%;
+}
+
+.proleft{
+    display: flex;
+    flex-direction: row;
+    width: 71.5%;
+}
+
