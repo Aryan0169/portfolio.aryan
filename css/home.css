@@ -1006,8 +1006,9 @@ a {
 
 
   .progress{
-    width: 40%;
-    margin-right: 10%;
+    width: 70%;
+    height: 10px;
+    /* margin-right: 10%; */
   }
 
   #projects {
@@ -1200,8 +1201,8 @@ a {
 
 
   .progress {
-    width: 35%;
-    height: 8px
+    width: 50%;
+    height: 8px;
   }
 
 }
