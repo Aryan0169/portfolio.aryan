@@ -31,7 +31,8 @@ for (const project of projectsData) {
     color: #fff;
     font-family: Poppins, sans-serif;
     text-align: center;
-    transition: width 0.3s ease;
+    transition: width 0.5s ease;
+
   `
     );
 
@@ -88,19 +89,36 @@ for (const project of projectsData) {
      });
 
     card.addEventListener("mouseover", () => {
-        card.style.width = "45%";
+        if (mediaQuery.matches) {
+            card.style.width = "80%";
+        } else {
+            card.style.width = "45%";
+        }
         description.style.display = "block";
         viewDetailsLink.style.display = "block";
     });
 
     // Reset the width when not hovered
     card.addEventListener("mouseout", () => {
-        card.style.width = "40%";
+        if (mediaQuery.matches) {
+            card.style.width = "75%";
+        } else {
+            card.style.width = "40%";
+        }
         description.style.display = "none";
         viewDetailsLink.style.display = "none";
     });
 
-    card.appendChild(viewDetailsLink); // Append the anchor link to the card
+    card.appendChild(viewDetailsLink);
 
-    cardContainer.appendChild(card); // Append the card to the new container
+    cardContainer.appendChild(card);
+}
+
+const mediaQuery = window.matchMedia("(max-width: 850px)");
+
+if (mediaQuery.matches) {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+        card.style.width = "75%";
+    });
 }

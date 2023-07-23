@@ -45,3 +45,32 @@ body {
     flex-direction: row;
     width: 71.5%;
 }
+
+@media screen and (max-width: 830px) {
+    #projects{
+        position:relative;
+        margin: 0px;
+        left: 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .proright{
+        position: unset;
+        height: auto;
+        right: unset;
+        width: 80%;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .proleft{
+        width: 100%;
+    }
+    .card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}

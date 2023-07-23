@@ -17,7 +17,7 @@ const projectsData = [
         title: 'Gesture Controlled BOT',
         description: 'As a Design Lab project in III Sem, I created a bot that move according to the direction of the Hand',
         imageUrl: '../images/plinth.png',
-        link: 'https://www.plinth.co.in/',
+        link: 'https://github.com/Aryan0169/Gesture-Control-Bot.git',
         buttontitle: "GITHUB",
     },
     {
