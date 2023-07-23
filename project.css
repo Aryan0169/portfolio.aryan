@@ -15,20 +15,20 @@ body {
     display: flex;
     margin-top: 30px;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-.project-row {
+.card-container {
     display: flex;
-    justify-content: space-between; /* Optional: Adjust as needed */
-    width: 100%; /* Optional: Adjust as needed */
-    margin-bottom: 20px; /* Optional: Adjust as needed */
-  }
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
 
 .proright {
     display: flex;
-    position: sticky;
-    /* height: 60vh; */
+    position: fixed;
+    right: 0;
+    height: 70vh;
     align-items: center;
     justify-content: center;
     padding: 5%;
@@ -40,9 +40,8 @@ body {
     width: 18.5%;
 }
 
-.proleft{
+.proleft {
     display: flex;
     flex-direction: row;
     width: 71.5%;
 }
-

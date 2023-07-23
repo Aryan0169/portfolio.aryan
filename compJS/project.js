@@ -1,5 +1,12 @@
 const proleftDiv = document.querySelector(".proleft");
 
+// Create a new container to hold the cards
+const cardContainer = document.createElement("div");
+cardContainer.classList.add("card-container");
+
+// Append the new container to the parent div (proleftDiv)
+proleftDiv.appendChild(cardContainer);
+
 // Loop through the projects data and create cards dynamically
 for (const project of projectsData) {
     const card = document.createElement("div");
@@ -13,13 +20,17 @@ for (const project of projectsData) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 40%;
+    margin: 10px 10px;
+    margin-top: 10px;
+    padding: 15px;
     background-color: rgba(103, 84, 69, 0.2);
-    width: 50%;
     border-radius: 20px;
     letter-spacing: 2px;
     font-size: 15px;
-    margin: 10px 10px;
-    padding: 15px;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    text-align: center;
     transition: width 0.3s ease;
   `
     );
@@ -34,60 +45,62 @@ for (const project of projectsData) {
     title.textContent = project.title;
     title.style.fontFamily = "Zero";
     title.style.textAlign = "center";
+    title.style.width = "90%";
+    title.style.margin = "0px";
+    title.style.marginTop = "20px";
     title.style.opacity = "0.8";
     card.appendChild(title);
 
     const description = document.createElement("p");
     description.textContent = project.description;
     description.style.display = "none";
+    description.style.width = "90%";
+    description.style.marginTop = "10px";
+    description.style.marginBottom = "5px";
     description.style.textAlign = "center";
     description.style.opacity = "0.8";
     card.appendChild(description);
 
-    const button = document.createElement("button");
-    button.textContent = project.buttontitle;
-    button.style.padding = "10px 20px";
-    button.style.display = "none";
-    button.style.marginTop = "10px";
-    button.style.border = "1px solid white";
-    button.style.backgroundColor = "transparent";
-    button.style.color = "white";
-    button.style.borderRadius = "5px";
+    const viewDetailsLink = document.createElement("a"); // Use an anchor element instead of a button
+    viewDetailsLink.textContent = project.buttontitle; // Set the link text
+    viewDetailsLink.style.padding = "10px 30%";
+    viewDetailsLink.style.display = "none";
+    viewDetailsLink.style.textDecoration = "none";
+    viewDetailsLink.style.marginTop = "10px";
+    viewDetailsLink.style.border = "1px solid white";
+    viewDetailsLink.style.backgroundColor = "transparent";
+    viewDetailsLink.style.color = "white";
+    viewDetailsLink.style.borderRadius = "5px";
+    viewDetailsLink.setAttribute("href", project.link); // Set the link's href attribute
 
     // Add event listener for hover effect
-    button.addEventListener("mouseover", () => {
-        button.style.backgroundColor = "#cccccc";
-        button.style.color = "black";
-        button.style.cursor = "pointer";
+    viewDetailsLink.addEventListener("mouseover", () => {
+        viewDetailsLink.style.backgroundColor = "#cccccc";
+        viewDetailsLink.style.color = "black";
+        viewDetailsLink.style.cursor = "pointer";
     });
 
     // Reset the styles when not hovered
-    button.addEventListener("mouseout", () => {
-        button.style.backgroundColor = "initial";
-        button.style.color = "white";
-        button.style.cursor = "default";
-    });
-
-    // Redirect the button link when clicked
-    button.addEventListener("click", () => {
-        window.location.href = project.link;
-    });
+    viewDetailsLink.addEventListener("mouseout", () => {
+        viewDetailsLink.style.backgroundColor = "initial";
+        viewDetailsLink.style.color = "white";
+        viewDetailsLink.style.cursor = "default";
+     });
 
     card.addEventListener("mouseover", () => {
-        card.style.width = "90%"; // Increase width on hover
+        card.style.width = "45%";
         description.style.display = "block";
-        description.style.width = "80%";
-        button.style.display = "block";
+        viewDetailsLink.style.display = "block";
     });
 
     // Reset the width when not hovered
     card.addEventListener("mouseout", () => {
-        card.style.width = "50%"; // Reset width when not hovered
+        card.style.width = "40%";
         description.style.display = "none";
-        button.style.display = "none";
+        viewDetailsLink.style.display = "none";
     });
 
-    card.appendChild(button);
+    card.appendChild(viewDetailsLink); // Append the anchor link to the card
 
-    proleftDiv.appendChild(card);
+    cardContainer.appendChild(card); // Append the card to the new container
 }
