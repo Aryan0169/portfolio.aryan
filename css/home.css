@@ -376,7 +376,7 @@ cl {
 #skills {
   height: fit-content;
   display: flex;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .ski-left {
@@ -395,6 +395,7 @@ cl {
 
 .ski-right {
   width: 81.5%;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -633,7 +634,7 @@ cl {
 
 #projects {
   display: flex;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .proright {
@@ -1059,7 +1060,7 @@ a {
   .ski-right {
     margin: 0px;
     padding: 0px;
-    margin-top: 5vh;
+    padding-top: 5vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1077,6 +1078,7 @@ a {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    padding-top: 0px;
     margin-top: 5vh;
   }
 
