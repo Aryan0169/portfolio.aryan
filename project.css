@@ -27,6 +27,9 @@ body {
 
 .proright {
     display: flex;
+    position: sticky;
+    right: 0;
+    top: 70px;
     height: 70vh;
     align-items: center;
     justify-content: center;
