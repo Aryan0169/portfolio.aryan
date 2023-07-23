@@ -129,7 +129,7 @@ nav {
 }
 
 .navbar-menu li a:hover,
-.navbar-menu li a:active{
+.navbar-menu li a:active {
   border-bottom: 2px solid #fbc391;
   color: #fbc391;
 }
@@ -181,7 +181,7 @@ nav {
   color: black;
 }
 
-.class2 a{
+.class2 a {
   margin-top: 10px;
 }
 
@@ -381,7 +381,7 @@ cl {
 
 .ski-left {
   display: flex;
-  height: 40vh;
+  /* height: 40vh; */
   align-items: center;
   justify-content: center;
   padding: 5%;
@@ -408,11 +408,10 @@ cl {
   align-items: center;
   justify-content: flex-end;
   width: 70%;
-  
+
 }
 
 .progress {
-  /* justify-self: flex-start; */
   margin-left: 10%;
   background: #343434;
   border-radius: 10px;
@@ -441,6 +440,15 @@ cl {
 
 .progress-value2 {
   animation: load2 2s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 10px;
+  background: #fbc391;
+  height: 100%;
+  width: 0;
+}
+
+.progress-value9 {
+  animation: load9 2s normal forwards;
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 10px;
   background: #fbc391;
@@ -493,13 +501,33 @@ cl {
   width: 0;
 }
 
+.progress-value8 {
+  animation: load8 2s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 10px;
+  background: #fbc391;
+  height: 100%;
+  width: 0;
+}
+
+.progress-value10 {
+  animation: load10 2s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 10px;
+  background: #fbc391;
+  height: 100%;
+  width: 0;
+}
+
+
+
 @keyframes load {
   0% {
     width: 0;
   }
 
   100% {
-    width: 75%;
+    width: 85%;
   }
 }
 
@@ -519,7 +547,7 @@ cl {
   }
 
   100% {
-    width: 50%;
+    width: 80%;
   }
 }
 
@@ -564,6 +592,36 @@ cl {
 }
 
 @keyframes load7 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes load8 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes load9 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes load10 {
   0% {
     width: 0;
   }
@@ -936,14 +994,17 @@ a {
     padding: 0%;
     margin: 0%;
   }
+
   .edu-image {
     padding: 0px;
     margin: 0%;
     margin-bottom: 5%;
   }
-  .edu-image2{
+
+  .edu-image2 {
     margin-top: -10vh;
   }
+
   .edu-image-wrapper {
     font-size: 20px;
   }
@@ -1005,7 +1066,7 @@ a {
   }
 
 
-  .progress{
+  .progress {
     width: 70%;
     height: 10px;
     /* margin-right: 10%; */
