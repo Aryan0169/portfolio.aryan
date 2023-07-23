@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Zero";
+    src: url(/../Fonts/AbsoluteXero-YwOO.ttf) format("truetype");
+}
+
+body {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    color: #fff;
+}
+
+#projects {
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.proright {
+    display: flex;
+    position: sticky;
+    right: 0;
+    top: 70px;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    color: #fbc391;
+    font-size: 40px;
+    font-family: "Zero", sans-serif;
+    background-color: rgba(123, 31, 167, 0.15);
+    border-radius: 20px 0px 0px 20px;
+    width: 18.5%;
+}
+
+.proleft {
+    display: flex;
+    flex-direction: row;
+    width: 71.5%;
+}
+
+@media screen and (max-width: 830px) {
+    #projects{
+        position:relative;
+        margin: 0px;
+        left: 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .proright{
+        position: unset;
+        height: auto;
+        right: unset;
+        width: 80%;
+        margin-bottom: 20px;
+        padding:  10% 5% 10% 5%;
+        font-size: 30px;
+        border-radius: 20px;
+    }
+    .proleft{
+        width: 100%;
+    }
+    .card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .proright{
+        font-size: 20px;
+    }
+}
