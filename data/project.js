@@ -26,20 +26,6 @@ const projectsData = [
         imageUrl: '../images/behance.png',
         link: 'https://www.behance.net/aryanbansal6',
         buttontitle: "Behance",
-    },
-    {
-        title: 'Gesture Controlled BOT',
-        description: 'As a Design Lab project in III Sem, I created a bot that move according to the direction of the Hand',
-        imageUrl: '../images/plinth.png',
-        link: 'https://github.com/Aryan0169/Gesture-Control-Bot.git',
-        buttontitle: "GITHUB",
-    },
-    {
-        title: 'Design Projects',
-        description: 'This is my Behance Profile which contain all my design projects',
-        imageUrl: '../images/behance.png',
-        link: 'https://www.behance.net/aryanbansal6',
-        buttontitle: "Behance",
     }
     // Add more project objects as needed
 ];

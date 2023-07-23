@@ -45,6 +45,7 @@ for (const project of projectsData) {
     const title = document.createElement("h3");
     title.textContent = project.title;
     title.style.fontFamily = "Zero";
+    title.style.fontSize = "15px";
     title.style.textAlign = "center";
     title.style.width = "90%";
     title.style.margin = "0px";
