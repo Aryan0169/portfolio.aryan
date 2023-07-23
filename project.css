@@ -65,7 +65,7 @@ body {
         width: 80%;
         margin-bottom: 20px;
         padding:  10% 5% 10% 5%;
-        font-size: 30px;
+        font-size: 6vh;
         border-radius: 20px;
     }
     .proleft{
@@ -79,8 +79,8 @@ body {
     }
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 600px){
     .proright{
-        font-size: 20px;
+        font-size: 30px;
     }
 }
