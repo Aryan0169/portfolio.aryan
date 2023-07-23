@@ -12,6 +12,7 @@ body {
 }
 
 #projects {
+    position: relative;
     display: flex;
     margin-top: 30px;
     flex-wrap: wrap;
@@ -26,8 +27,6 @@ body {
 
 .proright {
     display: flex;
-    position: fixed;
-    right: 0;
     height: 70vh;
     align-items: center;
     justify-content: center;
@@ -62,7 +61,9 @@ body {
         right: unset;
         width: 80%;
         margin-bottom: 20px;
+        padding:  10% 5% 10% 5%;
         font-size: 30px;
+        border-radius: 20px;
     }
     .proleft{
         width: 100%;
@@ -72,5 +73,11 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .proright{
+        font-size: 20px;
     }
 }
