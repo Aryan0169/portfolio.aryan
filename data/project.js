@@ -15,7 +15,7 @@ const projectsData = [
     },
     {
         title: 'Gesture Controlled BOT',
-        description: 'As a Design Lab project in III Sem, I created a bot that move according to the direction of the Hand',
+        description: 'As a Project for Design Lab in III Sem of college, I created a bot that moves according to the motion of the Hand',
         imageUrl: '../images/robot.jpg',
         link: 'https://github.com/Aryan0169/Gesture-Control-Bot.git',
         buttontitle: "GITHUB",
@@ -29,14 +29,14 @@ const projectsData = [
     },
     {
         title: 'UAV assisted multiser DF relayed system',
-        description: 'As a LUSIP summer intern I made use of NOMA technology combined with relay mechanism to make 6G+ communication better',
+        description: 'As a LUSIP summer intern I made use of NOMA technology combined with relay mechanism to improve 6G+ communication',
         imageUrl: '../images/wireless.jpg',
         link: 'coming.html',
         buttontitle: "Certificate",
     },
     {
         title: 'GDSC Website',
-        description: 'As a creative domain lead at GDSC I designed the website for our club',
+        description: 'As the creative domain lead at GDSC LNMIIT, I designed the website for our club',
         imageUrl: '../images/gdsc.png',
         link: 'https://www.figma.com/proto/PFQnOfa19onhSRTomS1Rz7/Website-GDSC?type=design&node-id=612-23658&t=AVq4nIfDq2iAXkXP-0&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=640%3A2515',
         buttontitle: "Figma",
