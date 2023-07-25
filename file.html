@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notes PDF's</title>
+    <link rel="stylesheet" href="css/file.css" />
+  </head>
+  <body>
+    <h1>UPSC Notes</h1>
+    <div class="filters">
+      <label for="mainHeading">Select GS(Mains)</label>
+      <select id="mainHeading" onchange="filterSubheadings()">
+        <option value="all">All</option>
+      </select>
+      <label for="subHeading">Select Subject</label>
+      <select id="subHeading" onchange="updateShowButton()">
+        <option value="all">All</option>
+      </select>
+      <br />
+      <button id="showButton" onclick="showPDFLinks()" disabled>Show</button>
+    </div>
+
+    <div id="pdfLinks" style="display: none">
+      <!-- PDF links will be displayed here -->
+    </div>
+
+    <script src="data/file.js"></script>
+    <script src="compJS/file.js"></script>
+    <script>
+      loadDataAndPopulateMainHeadings(); // Call the function to load data and populate Main Heading dropdown
+    </script>
+  </body>
+</html>
