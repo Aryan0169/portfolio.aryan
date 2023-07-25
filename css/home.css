@@ -346,6 +346,7 @@ nav {
   background-color: rgb(103, 84, 69, 0.2);
   border-radius: 20px;
   letter-spacing: 2px;
+  height: 60vh;
 }
 
 .interests:hover{
@@ -963,6 +964,7 @@ nav {
     font-size: 30px;
     padding-top: 5%;
     padding-bottom: 5%;
+    height: unset;
   }
 
   .interests:hover, .about-detail:hover, .about-image:hover{
