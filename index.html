@@ -273,46 +273,11 @@
       </div>
     </div>
 
-    <script type="text/javascript">
-      const scroller = document.getElementById("style-4");
-      scroller.addEventListener("scroll", () => {
-        const nav = document.querySelector("nav");
-        console.log(scroller.scrollTop);
-        if (scroller.scrollTop > 200) {
-          nav.classList.add("scrolled");
-        } else {
-          nav.classList.remove("scrolled");
-        }
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var navbarMenu = document.getElementById("navbarMenu");
-        var navbarIcon = document.getElementById("navbarIcon");
-
-        // Open or close navbar menu when icon is clicked
-        navbarIcon.addEventListener("click", function (event) {
-          event.stopPropagation();
-          navbarMenu.classList.toggle("show");
-        });
-
-        // Close navbar menu when screen is clicked
-        document.addEventListener("click", function () {
-          navbarMenu.classList.remove("show");
-        });
-      });
-    </script>
-    <script>
-      // JavaScript to show the content after 2 seconds
-      setTimeout(function () {
-        document.getElementById("loading-logo").style.display = "none";
-        document.getElementById("content").style.display = "block";
-      }, 3000);
-    </script>
+    <script type="text/javascript" src="js/navcolor.js"></script>
+    <script src="js/navbarmenu.js"></script>
+    <script src="js/loading.js"></script>
     <script src="data/project.js"></script>
     <script src="compJS/project.js"></script>
-
     <script src="js/skillOnScroll.js"></script>
   </body>
 </html>
