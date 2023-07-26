@@ -121,4 +121,7 @@ a {
         margin-top: 20px;
         font-size: 25px;
     }
+    #pdfLinks{
+        font-size: 50px;
+    }
 }
