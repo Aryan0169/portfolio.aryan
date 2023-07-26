@@ -26,8 +26,7 @@ h1 {
 
 .filters {
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -86,10 +85,10 @@ a {
     color: pink;
 }
 
-@media screen and (max-width: 830px) {
+@media (orientation: portrait) {
 
     h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .filters {
