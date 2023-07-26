@@ -6,7 +6,7 @@
 body {
     font-family: Poppins;
     color: white;
-    background-color: black;
+    background-color: #171717;
 }
 
 .container{
@@ -75,7 +75,7 @@ button:hover {
 }
 
 #pdfLinks {
-    /* text-align: center; */
+    text-align: center;
     font-size: 20px;
     color: white;
 }
@@ -83,7 +83,7 @@ button:hover {
 a {
     display: block;
     margin: 5px;
-    color: rgba(123, 31, 167);
+    color: pink;
 }
 
 @media screen and (max-width: 830px) {
@@ -93,9 +93,9 @@ a {
     }
 
     .filters {
-        display: flex;
         flex-direction: column;
     }
+
     label{
         margin: 0px;
         margin-bottom: 10px;

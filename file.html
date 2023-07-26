@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Notes PDF's</title>
+    <title>Aryan Bansal</title>
     <link rel="stylesheet" href="css/file.css" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
   </head>
   <body>
     <div class="container">
@@ -23,11 +24,24 @@
     <div id="pdfLinks" style="display: none">
       <!-- PDF links will be displayed here -->
     </div>
-    
+
     <script src="data/file.js"></script>
     <script src="compJS/file.js"></script>
     <script>
-      loadDataAndPopulateMainHeadings(); // Call the function to load data and populate Main Heading dropdown
+      document.addEventListener("DOMContentLoaded", function () {
+        const loggedIn = localStorage.getItem("loggedIn");
+        if (!loggedIn) {
+          // If user is not logged in, redirect to login.html
+          window.location.href = "login.html";
+        } else {
+          // User is logged in, load data and populate Main Heading dropdown
+          loadDataAndPopulateMainHeadings();
+        }
+      });
+
+      window.addEventListener("beforeunload", function () {
+        localStorage.removeItem("loggedIn");
+      });
     </script>
   </body>
 </html>
