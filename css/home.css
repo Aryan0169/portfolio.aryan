@@ -3,6 +3,11 @@
   src: url(/../Fonts/AbsoluteXero-YwOO.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Oneday";
+  src: url(../Fonts/ONEDAY.ttf) format("truetype");
+}
+
 body {
   background-color: #000;
   font-family: "Poppins";
@@ -256,11 +261,13 @@ nav {
 }
 
 .edu {
+  font-family: "Oneday";
   writing-mode: vertical-rl;
   float: left;
   padding-right: 6%;
   height: 25vh;
   font-size: 4vh;
+  text-align: center;
   letter-spacing: 2px;
 }
 
@@ -349,18 +356,20 @@ nav {
   height: 60vh;
 }
 
-.interests:hover{
+.interests:hover {
   transform: scale(1.05);
 }
 
-.about-detail:hover, .about-image:hover{
+.about-detail:hover,
+.about-image:hover {
   transform: scale(1.05);
 }
 
 .clubs {
   margin-left: 5%;
 }
-.int-li1{
+
+.int-li1 {
   margin-top: +7px;
 }
 
@@ -909,21 +918,21 @@ nav {
     font-size: 20px;
   }
 
-  .education{
+  .education {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 80%;
   }
 
-  .edu{
+  .edu {
     writing-mode: unset;
     padding: 0%;
     height: unset;
     text-decoration: underline;
   }
 
-  .image{
+  .image {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -932,7 +941,7 @@ nav {
     padding: 0%;
   }
 
-  .edu-image{
+  .edu-image {
     width: 70%;
     margin-top: 5%;
     margin-bottom: 3%;
@@ -967,7 +976,9 @@ nav {
     height: unset;
   }
 
-  .interests:hover, .about-detail:hover, .about-image:hover{
+  .interests:hover,
+  .about-detail:hover,
+  .about-image:hover {
     transform: unset;
   }
 

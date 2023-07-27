@@ -44,10 +44,10 @@ for (const project of projectsData) {
 
     const title = document.createElement("h3");
     title.textContent = project.title;
-    title.style.fontFamily = "Zero";
-    title.style.fontSize = "15px";
+    title.style.fontFamily = "Oneday";
+    title.style.fontSize = "20px";
     title.style.textAlign = "center";
-    title.style.width = "90%";
+    title.style.width = "25vw";
     title.style.margin = "0px";
     title.style.marginTop = "20px";
     title.style.opacity = "0.8";
@@ -56,7 +56,7 @@ for (const project of projectsData) {
     const description = document.createElement("p");
     description.textContent = project.description;
     description.style.display = "none";
-    description.style.width = "90%";
+    description.style.width = "30vw";
     description.style.marginTop = "10px";
     description.style.marginBottom = "5px";
     description.style.textAlign = "center";
@@ -87,7 +87,8 @@ for (const project of projectsData) {
         viewDetailsLink.style.backgroundColor = "initial";
         viewDetailsLink.style.color = "white";
         viewDetailsLink.style.cursor = "default";
-     });
+    });
+
 
     card.addEventListener("mouseover", () => {
         if (mediaQuery.matches) {
@@ -121,5 +122,17 @@ if (mediaQuery.matches) {
     const cards = document.querySelectorAll(".card");
     cards.forEach((card) => {
         card.style.width = "75%";
+        const title = card.querySelector("h3");
+        if (mediaQuery.matches) {
+            title.style.width = "75vw";
+        } else {
+            title.style.width = "25vw";
+        }
+        const description = card.querySelector("p");
+        if (mediaQuery.matches) {
+            description.style.width = "80vw";
+        } else {
+            description.style.width = "30vw";
+        }
     });
 }
