@@ -23,7 +23,7 @@ function getData() {
             mainHeading: 'GS3',
             subHeading: 'Enviroment',
             fileName: 'Indian Economic Development (Class 11th Last 2 Chapter)',
-            fileLink: 'pdf/category2_subD.pdf'
+            fileLink: 'https://drive.google.com/file/d/1nqO_a6HzraOU0-1-4Ou0-jFa9VpXGfqx/view?usp=drive_link'
         },
     ];
 }
