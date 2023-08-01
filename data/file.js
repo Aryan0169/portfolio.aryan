@@ -8,6 +8,12 @@ function getData() {
             fileLink: 'https://drive.google.com/file/d/1hDeKd0GkHJCUBiCVuEGFUy5oFNymJVav/view?usp=sharing'
         },
         {
+            mainHeading: 'GS1',
+            subHeading: 'History Books',
+            fileName: 'Class 9th Nazism',
+            fileLink: 'https://drive.google.com/file/d/1eMm7MRO0CFfH_u2WYLXsbi6O5nz9hEbr/view?usp=drive_link'
+        },
+        {
             mainHeading: 'GS2',
             subHeading: 'Political Science',
             fileName: 'Constitution (Class 11th)',
