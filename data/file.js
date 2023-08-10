@@ -14,6 +14,12 @@ function getData() {
             fileLink: 'https://drive.google.com/file/d/1eMm7MRO0CFfH_u2WYLXsbi6O5nz9hEbr/view?usp=drive_link'
         },
         {
+            mainHeading: 'GS1',
+            subHeading: 'History Books',
+            fileName: 'Class 10th Nationalism',
+            fileLink: 'https://drive.google.com/file/d/1RBvi-oB-mTdA35orCgQdANVRDjLj4QV3/view?usp=drive_link'
+        },
+        {
             mainHeading: 'GS2',
             subHeading: 'Political Science',
             fileName: 'Constitution (Class 11th)',
