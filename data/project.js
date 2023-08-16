@@ -28,7 +28,7 @@ const projectsData = [
         buttontitle: "Behance",
     },
     {
-        title: 'UAV assisted multiser DF relayed system',
+        title: 'UAV assisted multiuser DF relayed system',
         description: 'As a LUSIP summer intern I made use of NOMA technology combined with relay mechanism to improve 6G+ communication',
         imageUrl: '../images/wireless.jpg',
         link: 'coming.html',
