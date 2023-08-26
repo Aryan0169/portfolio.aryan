@@ -31,7 +31,7 @@ const projectsData = [
         title: 'UAV assisted multiuser DF relayed system',
         description: 'As a LUSIP summer intern I made use of NOMA technology combined with relay mechanism to improve 6G+ communication',
         imageUrl: '../images/wireless.jpg',
-        link: 'coming.html',
+        link: 'https://drive.google.com/file/d/14mNKAJsk931b5jZ85hwq7dHyWdEPsR_X/view?usp=drive_link',
         buttontitle: "Certificate",
     },
     {
