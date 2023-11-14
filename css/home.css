@@ -640,7 +640,7 @@ nav {
 
 #contacts {
   display: flex;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   background-color: rgba(32, 10, 53, 0.3);
 }
 
