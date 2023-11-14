@@ -134,7 +134,7 @@ nav {
 }
 
 .navbar-menu li a:hover,
-.navbar-menu li a:active {
+.navbar-menu li a:active{
   border-bottom: 2px solid #fbc391;
   color: #fbc391;
 }

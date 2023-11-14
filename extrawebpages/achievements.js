@@ -1,11 +1,8 @@
-// achievements.js
-
 import achievementsData from './data.js';
 
 document.addEventListener("DOMContentLoaded", function () {
   const timelineContainer = document.getElementById("timeline-container");
 
-  // Function to create a timeline item
   function createTimelineItem(achievement, index) {
     const timelineItem = document.createElement("div");
     timelineItem.className = `timeline-item ${index % 2 === 0 ? 'left' : 'right'}`;
@@ -18,9 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return timelineItem;
   }
 
-  // Function to render the sorted timeline
   function renderTimeline() {
-    // Sort achievementsData by month and year
     const sortedData = achievementsData.slice().sort((a, b) => {
       const dateA = new Date(a.date);
       const dateB = new Date(b.date);
@@ -32,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
       timelineContainer.appendChild(timelineItem);
     });
   }
-
-  // Call the function to render the sorted timeline on page load
+  
   renderTimeline();
 });
