@@ -13,7 +13,6 @@ const achievementsData = [
     { name: "Advanced my HTML,CSS, and JS knowledge and completed my portfolio website.", date: "July 2023" },
     { name: "Completed the UI/UX part for the GDSC LNMIIT Website", date: "August 2023" },
     { name: "Organized a Intra-College WebD Hackathon under IEEE SB", date: "September 2023" },
-    // Add more achievements as needed
   ];
   
   export default achievementsData;
