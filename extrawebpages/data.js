@@ -14,7 +14,7 @@ const achievementsData = [
     { name: "Completed the UI/UX part for the GDSC LNMIIT Website", date: "August 2023" },
     { name: "Organized a Intra-College WebD Hackathon under IEEE SB", date: "September 2023" },
     { name: "Developed my First Robotics Project, a Gesture Controlled Bot", date: "November 2022" },
-    { name: "Being in Phoenix took a Workshop on Arduino and Basics of Robotics", date: "October 2023" },
+    { name: "Being in Phoenix took a Workshop on Arduino and Basics of Robotics", date: "October 2022" },
     { name: "Took my second workshop on NodeMCU and how to make a wireless bot via it", date: "April 2023" },
     { name: "As the event head successfully organized the annual event of Phoenix - The Torque", date: "April 2023" },
   ];
