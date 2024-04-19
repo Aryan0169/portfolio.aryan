@@ -17,6 +17,10 @@ const achievementsData = [
     { name: "Being in Phoenix took a Workshop on Arduino and Basics of Robotics", date: "October 2022" },
     { name: "Took my second workshop on NodeMCU and how to make a wireless bot via it", date: "April 2023" },
     { name: "As the event head successfully organized the annual event of Phoenix - The Torque", date: "April 2023" },
+    { name: "Head of GameCodeX, Hackathon by GDSC LNMIIT", date: "March 2024" },
+    { name: "As the event head organized a Robothon in PLINTH 2024 under IEEE SB", date: "January 2024" },
+    
+    
   ];
   
   export default achievementsData;
