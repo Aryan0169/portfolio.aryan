@@ -21,6 +21,7 @@ const achievementsData = [
     { name: "As the event head organized a Robothon in PLINTH 2024 under IEEE SB", date: "January 2024" },
     { name: "Promoted to the Chairperson of the IEEE SB.", date: "May 2024" },
     { name: "Started Research Fellowship with Dr. Akash Gupta on Vehicualar Communication.", date: "May 2024" },
+    { name: "Promoted to the Coordinator of The Phoenix.", date: "May 2023" },
     
     
   ];
