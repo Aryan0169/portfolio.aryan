@@ -19,6 +19,8 @@ const achievementsData = [
     { name: "As the event head successfully organized the annual event of Phoenix - The Torque", date: "April 2023" },
     { name: "Head of GameCodeX, Hackathon by GDSC LNMIIT", date: "March 2024" },
     { name: "As the event head organized a Robothon in PLINTH 2024 under IEEE SB", date: "January 2024" },
+    { name: "Promoted to the Chairperson of the IEEE SB.", date: "May 2024" },
+    { name: "Started Research Fellowship with Dr. Akash Gupta on Vehicualar Communication.", date: "May 2024" },
     
     
   ];
